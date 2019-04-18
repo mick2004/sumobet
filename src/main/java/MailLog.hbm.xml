@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-Aug-2016 20:53:30 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="aps.sumo.MailLog" table="MailLog">
+        <id name="idMailLog" type="java.lang.Integer">
+            <column name="idMailLog" />
+            <generator class="identity" />
+        </id>
+        <property name="from" type="string">
+            <column name="From" length="145" not-null="true" />
+        </property>
+        <property name="to" type="string">
+            <column name="To" length="145" not-null="true" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="lastUpdated" length="19" />
+        </property>
+        <property name="noOfResults" type="java.lang.Integer">
+            <column name="NoOfResults" />
+        </property>
+        <property name="averagDifferenceOdds" type="java.lang.Long">
+            <column name="AveragDifferenceOdds" precision="10" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

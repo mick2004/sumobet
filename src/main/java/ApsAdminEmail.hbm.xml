@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-Aug-2016 19:11:23 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="aps.sumo.ApsAdminEmail" table="aps_AdminEmail">
+        <id name="idapsAdminEmail" type="java.lang.Integer">
+            <column name="idaps_AdminEmail" />
+            <generator class="identity" />
+        </id>
+        <property name="email" type="string">
+            <column name="Email" length="145" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="Pass" length="145" not-null="true" />
+        </property>
+        <property name="host" type="string">
+            <column name="Host" length="145" not-null="true" />
+        </property>
+        <property name="port" type="string">
+            <column name="Port" length="45" not-null="true" />
+        </property>
+        <property name="timeOut" type="string">
+            <column name="TimeOut" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

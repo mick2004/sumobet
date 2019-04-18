@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>   
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property> 
+        <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">anvay123</property>
+        <property name="hibernate.connection.url">jdbc:mysql://hanuman.cf39tc7rdcbj.eu-west-1.rds.amazonaws.com/hanuman</property>
+        <property name="hibernate.connection.username">angad</property>
+        <property name="hibernate.default_catalog">hanuman</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping resource="LiveOdds.hbm.xml"></mapping>
+        <mapping resource="LiveOddsHistory.hbm.xml"></mapping>
+        <mapping resource="ApsWpdatatable3.hbm.xml"></mapping>
+        <mapping resource="MailLog.hbm.xml"></mapping> 
+        <mapping resource="ApsAdminEmail.hbm.xml"></mapping> 
+        <mapping resource="LiveOddsLastRun.hbm.xml"></mapping>
+    </session-factory>
+</hibernate-configuration>

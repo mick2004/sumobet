@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-Aug-2016 22:12:54 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="aps.sumo.ApsWpdatatable3" table="aps_wpdatatable_3">
+        <composite-id name="id" class="aps.sumo.ApsWpdatatable3Id">
+            <key-property name="wdtId" type="int">
+                <column name="wdt_ID" />
+            </key-property>
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="email" type="string">
+                <column name="email" length="2000" />
+            </key-property>
+            <key-property name="isoddsalertenabled" type="string">
+                <column name="isoddsalertenabled" length="2000" />
+            </key-property>
+            <key-property name="betfairtrigger" type="java.lang.Float">
+                <column name="betfairtrigger" precision="16" scale="4" />
+            </key-property>
+            <key-property name="smarketstrigger" type="java.lang.Float">
+                <column name="smarketstrigger" precision="16" scale="4" />
+            </key-property>
+            <key-property name="batdaqtrigger" type="java.lang.Float">
+                <column name="batdaqtrigger" precision="16" scale="4" />
+            </key-property>
+            <key-property name="matchbooktrigger" type="java.lang.Float">
+                <column name="matchbooktrigger" precision="16" scale="4" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

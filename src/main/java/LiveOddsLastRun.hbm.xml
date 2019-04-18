@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16-Aug-2016 17:53:56 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="aps.sumo.LiveOddsLastRun" table="LiveOddsLastRun">
+        <id name="idLiveOdds" type="java.lang.Integer">
+            <column name="idLiveOdds" />
+            <generator class="identity" />
+        </id>
+        <property name="apsBookMaker" type="string">
+            <column name="apsBookMaker" length="245" not-null="true" />
+        </property>
+        <property name="apsExchange" type="string">
+            <column name="apsExchange" length="245" not-null="true" />
+        </property>
+        <property name="apsBackUrl" type="string">
+            <column name="apsBackURL" length="245" />
+        </property>
+        <property name="apsExchangeUrl" type="string">
+            <column name="apsExchangeURL" length="245" />
+        </property>
+        <property name="apsbackOdds" type="big_decimal">
+            <column name="apsbackOdds" precision="10" />
+        </property>
+        <property name="apslayOdds" type="big_decimal">
+            <column name="apslayOdds" precision="10" />
+        </property>
+        <property name="apsOutcomeName" type="string">
+            <column name="apsOutcomeName" length="245" />
+        </property>
+        <property name="apsCondition" type="string">
+            <column name="apsCondition" length="245" />
+        </property>
+        <property name="apsEventName" type="string">
+            <column name="apsEventName" length="245" />
+        </property>
+        <property name="apsDifferencePercentage" type="big_decimal">
+            <column name="apsDifferencePercentage" precision="10" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="lastUpdated" length="19" />
+        </property>
+        <property name="apsMatchTime" type="string">
+            <column name="apsMatchTime" length="245" />
+        </property>
+    </class>
+</hibernate-mapping>
